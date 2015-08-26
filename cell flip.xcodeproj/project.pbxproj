@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EA61D9391B8D2CC7007C9403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA61D9381B8D2CC7007C9403 /* AppDelegate.swift */; };
-		EA61D93B1B8D2CC7007C9403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA61D93A1B8D2CC7007C9403 /* ViewController.swift */; };
 		EA61D93E1B8D2CC7007C9403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA61D93C1B8D2CC7007C9403 /* Main.storyboard */; };
 		EA61D9401B8D2CC7007C9403 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA61D93F1B8D2CC7007C9403 /* Images.xcassets */; };
 		EA61D9431B8D2CC7007C9403 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA61D9411B8D2CC7007C9403 /* LaunchScreen.xib */; };
 		EA61D94F1B8D2CC7007C9403 /* cell_flipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA61D94E1B8D2CC7007C9403 /* cell_flipTests.swift */; };
+		EA61D9591B8D2D59007C9403 /* CardFlipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA61D9581B8D2D59007C9403 /* CardFlipTableViewController.swift */; };
+		EA61D95D1B8D2D97007C9403 /* CardFlipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA61D95C1B8D2D97007C9403 /* CardFlipTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		EA61D9331B8D2CC7007C9403 /* cell flip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cell flip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA61D9371B8D2CC7007C9403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA61D9381B8D2CC7007C9403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA61D93A1B8D2CC7007C9403 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA61D93D1B8D2CC7007C9403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA61D93F1B8D2CC7007C9403 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA61D9421B8D2CC7007C9403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EA61D9481B8D2CC7007C9403 /* cell flipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cell flipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA61D94D1B8D2CC7007C9403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA61D94E1B8D2CC7007C9403 /* cell_flipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell_flipTests.swift; sourceTree = "<group>"; };
+		EA61D9581B8D2D59007C9403 /* CardFlipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFlipTableViewController.swift; sourceTree = "<group>"; };
+		EA61D95C1B8D2D97007C9403 /* CardFlipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFlipTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				EA61D9381B8D2CC7007C9403 /* AppDelegate.swift */,
-				EA61D93A1B8D2CC7007C9403 /* ViewController.swift */,
+				EA61D9581B8D2D59007C9403 /* CardFlipTableViewController.swift */,
+				EA61D95C1B8D2D97007C9403 /* CardFlipTableViewCell.swift */,
 				EA61D93C1B8D2CC7007C9403 /* Main.storyboard */,
 				EA61D93F1B8D2CC7007C9403 /* Images.xcassets */,
 				EA61D9411B8D2CC7007C9403 /* LaunchScreen.xib */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA61D93B1B8D2CC7007C9403 /* ViewController.swift in Sources */,
+				EA61D9591B8D2D59007C9403 /* CardFlipTableViewController.swift in Sources */,
+				EA61D95D1B8D2D97007C9403 /* CardFlipTableViewCell.swift in Sources */,
 				EA61D9391B8D2CC7007C9403 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eOV-9O-vyu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Card Flip Table View Controller-->
+        <scene sceneID="D5C-mU-fzf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="eOV-9O-vyu" customClass="CardFlipTableViewController" customModule="cell_flip" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VAz-LX-p6w">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CardFlipCell" id="Uel-dj-EBF" customClass="CardFlipTableViewCell" customModule="cell_flip" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uel-dj-EBF" id="Lhc-Pj-9rz">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUZ-uc-bMs" userLabel="backView">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="back view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz4-L3-q4x" userLabel="backViewLabel">
+                                                    <rect key="frame" x="262" y="12" width="77" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.15802481069999999" green="0.9079930987" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="pz4-L3-q4x" secondAttribute="centerX" id="86S-F4-fLz"/>
+                                                <constraint firstAttribute="centerY" secondItem="pz4-L3-q4x" secondAttribute="centerY" id="vDz-iq-8md"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-Hb-c4h" userLabel="frontView">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="front view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qu-qj-hwC" userLabel="frontViewLabel">
+                                                    <rect key="frame" x="263" y="12" width="75" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.97300884710000002" blue="0.13590332760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="4qu-qj-hwC" secondAttribute="centerX" id="PNk-FT-SAK"/>
+                                                <constraint firstAttribute="centerY" secondItem="4qu-qj-hwC" secondAttribute="centerY" id="yn6-yj-1zt"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ym6-Hb-c4h" firstAttribute="leading" secondItem="Lhc-Pj-9rz" secondAttribute="leading" id="FqJ-jC-YOm"/>
+                                        <constraint firstAttribute="bottom" secondItem="PUZ-uc-bMs" secondAttribute="bottom" id="NAk-av-2gW"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ym6-Hb-c4h" secondAttribute="trailing" id="YFr-Du-Rih"/>
+                                        <constraint firstAttribute="trailing" secondItem="PUZ-uc-bMs" secondAttribute="trailing" id="cvt-Yc-xi0"/>
+                                        <constraint firstItem="PUZ-uc-bMs" firstAttribute="top" secondItem="Lhc-Pj-9rz" secondAttribute="top" id="h0D-aK-Dmr"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ym6-Hb-c4h" secondAttribute="bottom" id="kw6-gg-ufB"/>
+                                        <constraint firstItem="Ym6-Hb-c4h" firstAttribute="top" secondItem="Lhc-Pj-9rz" secondAttribute="top" id="oWD-Nw-iI9"/>
+                                        <constraint firstItem="PUZ-uc-bMs" firstAttribute="leading" secondItem="Lhc-Pj-9rz" secondAttribute="leading" id="zMu-Uf-M1b"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="backView" destination="PUZ-uc-bMs" id="woK-48-faQ"/>
+                                    <outlet property="frontView" destination="Ym6-Hb-c4h" id="X1P-E1-E6O"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eOV-9O-vyu" id="oax-bK-ayX"/>
+                            <outlet property="delegate" destination="eOV-9O-vyu" id="AJ0-mL-wYI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSj-QA-vDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="590" y="450"/>
         </scene>
     </scenes>
 </document>
