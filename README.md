@@ -1,5 +1,4 @@
 # card-flipping-cell
 
-https://www.dropbox.com/s/j5yxdjsuw9p5ukh/out.gif?dl=0
-
+![alt tag](https://cloud.githubusercontent.com/assets/10318596/9484641/798cb8d6-4b74-11e5-81e2-63e4e0cc5f05.gif)
 This is a title?
